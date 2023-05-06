@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Temprature Converter</h1>
+        <div class="temp-container">
+            
+            <div class="input-container">
+
+                <div>
+                    <label for="temp-input"  id="temp-input">Temprature</label><br>
+                    <input type="number" placeholder="Enter the value" name="temp-input"class="temp-input" id="input" required>
+                </div>
+                
+
+                <div class="type-container">
+                    <label for="temp-type" ="">Type</label><br>
+                    <select name="temp-type" id="temp-type" class="temp-type">
+                        <option value="far">Fahrenheit</option>
+                        <option value="deg">Degree</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="line"></div>
+            <div class="result-container">Output :- </div>
+            <div class="result-container">
+                
+                <div>
+                    <label for="result" id="output">Degree</label> <br>
+                    <input readonly placeholder="Result" class="result" id="temp-output">
+                </div>
+
+                <div>
+                    <label for="result" class="keloutput">Kelvin</label> <br>
+                    <input readonly placeholder="Result" class="result" id="keloutput">
+                </div>
+                
+                
+            </div>
+            <div class="btn-container">
+                <button class="button-1" id="btn">Convert</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
